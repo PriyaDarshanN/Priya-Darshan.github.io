@@ -1,81 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Metadata -->
-        <meta charset="utf-8">
-        
-        <!-- Mobile Specific Metas -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <meta name="keywords" content="programmer, coding, console, cv, java, OpenGL, c, c++, games developer, software developer, english" />
-        <meta name="description" content="Games and software developer interested in c++ engine development." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
 
-        <title>Priya Darshan Nagesh</title>
+    <header class = "header">
+        <a href="#" class = "logo"><span>Alex Kouda</span></a>
+        <ul class = "nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
 
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <!-- External file links for this html page  -->
-        
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
-        <link rel="stylesheet" type="text/css" href="styles/landing.css">
-        <link rel="stylesheet" type="text/css" href="styles/career.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <button onclick="toItch2()" class="visit-btn">Visit Itch.Io</button>
+    </header>
+    <section id="about" class="about">
+        <div class ="about-container">
+            <img src="Me 1.jpeg" alt="">
 
-        <!-- Project related css files --> 
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/mirage.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/exalted.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/15_puzzle.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/game_tech.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/vpa.css"/>
+            <div class="info-box">
 
-        <!-- Icon -->
-        <link rel="icon" type="image/png" href="./data/images/icon_trans.png">
-
-        <!-- Scripts -->
-        <script src="scripts/quick_links.js"></script>
-
-        <!-- Add google analytics data -->
-
-    </head>
-
-    <!-- Add a custom container class implementation here.... -->
-    <body id="top">  
-        <div class="container" style="margin-top: 1%" align="center">   
-            <div id="title">Priya Darshan Nagesh</div>            
-            <img class="landing_logo" src="./data/images/pic.jpg" alt="Portrait">
-            <div id="quick_links">
-                <!-- <p id ="tooltip">Quick Links</p> -->
-                <!-- <a href="./Data/cv/ORI_LAZAR_2021.pdf" target="_blank"><i class="fa fa-file-text"></i></a> -->
-                <a href="mailto:orilazar.cs@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/Kney-Delach" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ori-lazar-ba531491/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/channel/UCxb2vCV-1go3d0T8kUQSXbA" target="_blank"><i class="fa fa-youtube"></i></a>
-                <a href="https://www.instagram.com/ori_lazar_ig/" target="_blank"><i class="fa fa-instagram"></i></a>
-            </div>
-            <hr>
-            <div id="about_me">Hi there and thanks for stopping by! My name is Ori, i'm a passionate programmer who feels enjoyment and fulfillment from the journey of creating experiences.</div>
-            <hr>
-
-            <section class="buttons">
-                <div class="button_container">
-                    <div id="projects-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Projects</div> 
-                    <div id="career-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Career</div> 
-                    <div id="skills-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Skills</div> 
-                    <div id="research-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Research</div> 
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Alex Kouda</h1>
+                    <span>Game Engineer</span>
                 </div>
-            </section>
+
+                <div class="btn-group">
+                    <div onclick="toCV()" class="btn">See CV</div>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
         </div>
 
-        <!-- Scripts used in top body -->
-        <script src="scripts/text_animation.js"></script>
-    </body>
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
 
-    <div id="bottom">
-        <!-- Data_Labels -->
-        <div id="data_selection_area" class="container kd-selection-content" style="opacity: 0;"></div>
-        <div id="project_data_area" class="container kd-selection-content" style="opacity: 0;"></div>
-        <script src="scripts/button_nav_selection.js"></script>
-        <script src="scripts/button_nav_proj.js"></script>
-        <script src="scripts/button_nav_career.js"></script>
+            <div class="project-card">
 
-    </div>
+                <img src="Logo.jpg" alt="">
+                <h3>Top 10 Game Jam Entry</h3>
+                <p>I was part of a two man team that coded and did the art for the game Brewmaster Seige, this was done using Unity and Aseprite. I participated in designing everything from UI, gameplay to
+                    enemy AI. It was fun learning so many new skills and the project lasted around a week.
+                </p>
+                <div class="btn-group">
+                    <div onclick="toItch()" class="btn">Itch.io Page</div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="Cat Maze.png" alt="">
+                <h3>C++ Gameplay project</h3>
+                <p>I was challenged with creatively making a game using c++ in which a cat must find their kittens, focusing only on functionality
+                     I coded a customisable maze with active enemy AI and advanced pathfinding of both enemy and kitten(NPC) characters, alongside this i added
+                     usable advanced physics and mechanics with some basic UI to make it feel like a game. Multiplayer was also explored alongside this and will
+                     be present in future updates. 
+                </p>
+                <div class="btn-group">
+                    <div onclick="toCYt()" class="btn">Live Demo</div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="Dissertation.png" alt="">
+                <h3>Procedural Generation Of Biomes In Games</h3>
+                <p>Using unity i programmed an effiecient procedural generated environment, i made it generate multiple environments such as desert, grassy and island biomes.
+                    I supplimented this with extensive research which was the focus of this dissertation project.
+                </p>
+                <div class="btn-group">
+                    <div onclick="toDiss()" class="btn">See Dissertation</div>
+
+                </div>
+
+            </div>
+            <div class="project-card">
+
+                <img src="Graphics.png" alt="">
+                <h3>Exploring Graphics In Games</h3>
+                <p>I built a visual aesthetic world in order to test the use of shaders and lighting in game Development</p>
+                <div class="btn-group">
+                    <div onclick="toGraphicsYt()" class="btn">Live Demo</div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <section id="experience" class="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-info">
+
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Assistant Senior Software Developer, HugHub, London</span>
+                    <h3>Febuary 2020</h3>
+                    <p>I did the programming entry test for the job to get an insight into the recruitment process.
+                         I participated in day-to-day tasks such as sorting bugs. I assisted and took notes during the company’s weekly stand-up meeting.
+                          I learnt from the senior developer how programming has evolved and developed in recent years into forms such as AGILE.</p>
+
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Assistant IT Manager, Glinwell Marketing Ltd, St Albans</span>
+                    <h3>October 2018</h3>
+                    <p>I supported the IT manager; I helped oversee and test a new program for loading boxes. 
+                        The new system would sort out boxes in the most efficient amount of space minimising cost. 
+                        I particularly enjoyed being able to watch and learn how to program in html, also how producers ship and sell their goods to retailers. 
+                        In addition, I helped with tasks such as filing and fixing broken machinery.</p>
+
+                </div>
+
+            </div>
+
+            <img src="IMG_3129.jpeg" alt="">
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+
+            <h2 id="section-title">Contact Me</h2>
+
+            <div class="input">
+                <h3>Email: alexkouda16@gmail.com</h3>
+                <h3>University Email: A.Kouda2@newcastle.ac.uk</h3>
+                <h3>Business Email: alexkouda16business@gmail.com</h3>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p id="copywrite">© All rights Reserved | Alexandre Kouda</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
