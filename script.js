@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
 }
 
 function toGraphicsYt(){
-    const url = 'https://youtu.be/l84rPQ4s50o';
+    const url = 'https://youtu.be/a2gdxl-VHik?si=as7i-g3t2_JGqKtR';
     window.open(url);
 }
 function toCV(){
@@ -19,14 +19,14 @@ function toDiss(){
     window.open(url);
 }
 function toCYt(){
-    const url = 'https://youtu.be/ieL8A9HKIfQ';
+    const url = 'https://youtu.be/IWpml6bwoxI?si=mZB6MsIF_TroMy7X';
     window.open(url);
 }
 function toItch(){
-    const url = 'https://the-scoofy.itch.io/brewmaster-seige';
+    const url = 'https://hellrazzaa.itch.io/a-shot-in-the-dark';
     window.open(url);
 }
 function toItch2(){
-    const url = 'https://itch.io/profile/patienceeditz';
+    const url = 'https://priyadarshann.itch.io/';
     window.open(url);
 }
